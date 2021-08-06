@@ -1,0 +1,11 @@
+apply plugin: "java"
+
+task name(){
+    doLast{
+        if (project.hasProperty("args")) {
+            println "Welcome "+project.getProperty("args")+""
+        }
+		else
+        println " Hello World! "
+    }
+}
